@@ -1,0 +1,74 @@
+.reviews {
+  padding: 150px 0;
+  background: #000 url("../img/bg-reviews.png") no-repeat center / cover;
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .owl-reviews {
+    padding-left: 40px;
+
+    .owl-stage-outer {
+      overflow: visible;
+    }
+
+    .owl-item.active {
+      .item {
+        background: white;
+
+        .item__head span, .item__message {
+          color: #333;
+        }
+      }
+    }
+    .item {
+      padding: 30px 40px;
+      background: #000;
+      transition: all .3s ease;
+
+      &__head {
+        position: relative;
+        padding: 10px 0 10px 65px;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+
+        p {
+          color: $colorPrimary;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+        }
+
+        span {
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          transition: all .3s ease;
+        }
+      }
+
+      &__message {
+        padding-left: 65px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        transition: all .3s ease;
+      }
+    }
+  }
+}

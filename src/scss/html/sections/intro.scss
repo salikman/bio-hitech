@@ -1,0 +1,49 @@
+.intro {
+  height: 100vh;
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-position: center;
+
+  &__wrapper {
+    padding: 200px 0 0;
+  }
+
+  h1 {
+    max-width: 362px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  p {
+    max-width: 222px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  a {
+    position: relative;
+    display: flex;
+    width: max-content;
+    margin-left: 70px;
+    padding: 16px 18px;
+    background: $colorPrimary;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -70px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 55px;
+      height: 1.5px;
+      background: $colorPrimary;
+    }
+  }
+}
