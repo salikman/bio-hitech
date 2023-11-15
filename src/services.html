@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+"title": "Services"
+})
+
+<body>
+@@include('html/base/header.html', {})
+
+<main>
+    <div class="container">
+        <div class="page-services">
+            <div class="page-services__title">Наши услуги</div>
+            <div class="page-services__links">
+                <a href="#" class="active">
+                    <svg><use href="@img/icons/icons.svg#1"></use></svg>
+                    <span>Этапы проектирования</span>
+                    <p>Aenean commodo ligula eget dolor.</p>
+                </a>
+                <a href="#">
+                    <svg><use href="@img/icons/icons.svg#2"></use></svg>
+                    <span>Строительство и реконструкция</span>
+                    <p>Aenean commodo ligula eget dolor.</p>
+                </a>
+                <a href="#">
+                    <svg><use href="@img/icons/icons.svg#3"></use></svg>
+                    <span>Строительство и продажа каркасных домов</span>
+                    <p>Aenean commodo ligula eget dolor.</p>
+                </a>
+                <a href="#">
+                    <svg><use href="@img/icons/icons.svg#4"></use></svg>
+                    <span>Девелоперские проекты</span>
+                    <p>Aenean commodo ligula eget dolor.</p>
+                </a>
+            </div>
+            <div class="page-services__row">
+                <div class="page-services__content">
+                    <div class="page-services__content_img">
+                        <img src="@img/slide1.png" alt="">
+                    </div>
+                    <div class="page-services__content_text">
+                        <h4>Девелоперские проекты</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                    </div>
+                    <div class="page-services__content_list">
+                        <div class="page-services__content_item">
+                            <svg><use href="@img/icons/icons.svg#service-1"></use></svg>
+                            <div>
+                                <span>ДЕВЕЛОПМЕНТ</span>
+                                <p>Специализируемся на комплексной реализации проектов в загородном малоэтажном и в загородном отельном сегментах недвижимости. Предлагаем свой опыт и полный комплекс девелоперских услуг всем тем, у кого нет необходимых ресурсов или достаточных отраслевых знаний для реализации проектов жилой и гостиничной недвижимости.</p>
+                            </div>
+                        </div>
+                        <div class="page-services__content_item">
+                            <svg><use href="@img/icons/icons.svg#service-2"></use></svg>
+                            <div>
+                                <span>ФИНАНСОВЫЕ РЕШЕНИЯ</span>
+                                <p>«Упакуем» девелоперский проект в соответствии со стандартами финансирующей организации. Привлечем необходимое финансирование. Уже много лет плодотворно сотрудничаем с государственными и коммерческими банками, инвестиционными фондами и частными инвесторами, оптимизируем структуру и источники финансирования.</p>
+                            </div>
+                        </div>
+                        <div class="page-services__content_item">
+                            <svg><use href="@img/icons/icons.svg#service-3"></use></svg>
+                            <div>
+                                <span>GR сопровождение</span>
+                                <p>С целью снижения бюрократических барьеров, что позволит ускорить процесс реализации проектов, мы организуем взаимодействие с представителями органов власти на федеральном, региональном и муниципальном уровнях. GR компетенции наших специалистов помогут получить полностью легальную и долгосрочную поддержку от властей.</p>
+                            </div>
+                        </div>
+                        <div class="page-services__content_item">
+                            <svg><use href="@img/icons/icons.svg#service-4"></use></svg>
+                            <div>
+                                <span>Грантрайтинг</span>
+                                <p>Наши специалисты проведут комплексную оценку проекта на предмет возможности привлечения государственной поддержки. Мы сформируем перечень направлений и проведем работу по подготовке пакетов документов и их подачи в курирующий орган власти, а после получения средств, обеспечим реализацию проекта и направим необходимые отчетные материалы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-services__sidebar">
+                    <div class="page-services__sidebar_item">
+                        <div class="img">
+                            <img src="@img/sidebar.png" alt="">
+                            <div>
+                                <i>4+kk od 8,3 mil. Kč<br>5+kk vyprodáno</i>
+                                <p>ceny od <span>8,3mil Kč</span></p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h4>Nová Úpická A</h4>
+                            <p>Ceny a zahrnují DPH, určené příslušenství k bytu a prodlouženou záruku na kvalitu.</p>
+                            <a href="">Перейти на сайт</a>
+                        </div>
+                    </div>
+                    <div class="page-services__sidebar_item">
+                        <div class="img">
+                            <img src="@img/sidebar.png" alt="">
+                            <div>
+                                <i>4+kk od 8,3 mil. Kč<br>5+kk vyprodáno</i>
+                                <p>ceny od <span>8,3mil Kč</span></p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h4>Nová Úpická A</h4>
+                            <p>Ceny a zahrnují DPH, určené příslušenství k bytu a prodlouženou záruku na kvalitu.</p>
+                            <a href="">Перейти на сайт</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('html/base/footer.html', {})
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>

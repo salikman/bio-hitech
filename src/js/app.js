@@ -24,13 +24,35 @@ $('.owl-reviews').owlCarousel({
     loop:false,
     margin:20,
     nav:false,
-    items:2,
     dots: false,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        992:{
+            items:2,
+            nav:false
+        },
+    }
 })
 $('.owl-portfolio').owlCarousel({
     loop:true,
     margin:20,
     nav:true,
-    items:3,
     dots: false,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        476:{
+            items:2,
+            nav:true
+        },
+        992:{
+            items:3,
+            nav:false
+        },
+    }
 })

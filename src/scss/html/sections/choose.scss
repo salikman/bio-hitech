@@ -1,6 +1,10 @@
 .choose {
   padding: 150px 0;
 
+  @media (max-width: 991px) {
+    padding: 75px 0;
+  }
+
   &__wrapper {
 
   }
@@ -9,6 +13,10 @@
     margin-bottom: 30px;
     font-size: 50px;
     font-weight: 700;
+
+    @media (max-width: 991px) {
+      font-size: 40px;
+    }
   }
 
   &__list {
@@ -16,6 +24,14 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 70px;
     padding-left: 40px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 475px) {
+      grid-template-columns: 1fr;
+      padding-left: 0;
+    }
   }
 
   &__item {

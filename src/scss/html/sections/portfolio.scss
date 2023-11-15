@@ -3,16 +3,28 @@
   overflow: hidden;
   transition: all .3s ease;
 
+  @media (max-width: 991px) {
+    padding: 75px 0;
+  }
+
   &__title {
     margin-bottom: 30px;
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: 1;
+
+    @media (max-width: 991px) {
+      font-size: 40px;
+    }
   }
 
   .owl-portfolio {
     height: 520px;
+
+    @media (max-width: 991px) {
+      height: auto;
+    }
 
     .owl-stage-outer {
       overflow: visible;

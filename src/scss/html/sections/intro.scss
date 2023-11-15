@@ -4,6 +4,11 @@
   background-size: cover;
   background-position: center;
 
+  @media (max-width: 991px) {
+    height: auto;
+    padding: 50px 0 150px;
+  }
+
   &__wrapper {
     padding: 200px 0 0;
   }
