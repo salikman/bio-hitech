@@ -515,13 +515,21 @@ select {
   height: 47px;
 }
 
+.header.open .header__menu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -541,7 +549,66 @@ select {
      object-fit: cover;
 }
 
-.header__menu {
+.header__lang {
+  position: relative;
+  padding: 10px 20px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.header__lang:hover ul,
+.header__lang:focus ul {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__lang div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.header__lang div svg {
+  width: 20px;
+  height: 20px;
+}
+
+.header__lang ul {
+  position: absolute;
+  -webkit-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+          transform: translateY(30px);
+  top: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  padding: 5px 10px;
+  background: white;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header__lang ul li a:hover {
+  text-decoration: underline;
+}
+
+.header__collapse {
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -549,11 +616,133 @@ select {
   transition: all 0.3s ease;
 }
 
-.header__menu img {
+.header__collapse img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.header__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+  height: 100vh;
+  padding-top: 35px;
+  background: rgba(61, 61, 61, 0.8);
+  overflow: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.header__menu .close {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-bottom: 28px;
+  cursor: pointer;
+}
+
+.header__menu .close svg {
+  width: 100%;
+  height: 100%;
+}
+
+.header__menu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__menu .menu > li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  text-align: right;
+}
+
+.header__menu .menu > li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 20px;
+}
+
+.header__menu .menu > li > a span {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 157.143% */
+}
+
+.header__menu .menu > li > a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.header__menu .menu .open-drop ~ .dropdown {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.header__menu .menu .dropdown {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.header__menu .menu .dropdown li a {
+  display: block;
+  padding: 0 20px;
+  text-align: right;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  /* 157.143% */
 }
 
 .footer {

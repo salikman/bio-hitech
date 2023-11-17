@@ -5,6 +5,21 @@ flsFunctions.isWebp();
 lazyLoad.lazyLoad();
 
 ///////////////////////////
+// Btn nav collapse
+$('.header .header__collapse').on('click', function() {
+    $('.header').toggleClass('open');
+});
+$('.header .close').on('click', function() {
+    $('.header').removeClass('open');
+});
+
+///////////////////////////
+// Mobile dropdown
+$('.has-dropdown a svg').on('click', function(e) {
+    e.preventDefault()
+    $(this).parent().toggleClass('open-drop');
+});
+///////////////////////////
 // On Scroll
 $(window).on('scroll', function() {
     var wScroll = $(this).scrollTop();
