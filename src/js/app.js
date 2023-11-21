@@ -71,3 +71,38 @@ $('.owl-portfolio').owlCarousel({
         },
     }
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Отримуємо посилання на всі набори вкладок
+    const tabSets = document.querySelectorAll(".tabs");
+
+    // Функція, яка встановлює активний таб для конкретного набору
+    function setActiveTab(tabSet, index) {
+        // Отримуємо посилання на елементи вкладок та вмісту для цього набору
+        const tabLinks = tabSet.querySelectorAll(".tab-links li");
+        const tabContents = tabSet.querySelectorAll(".tab-content");
+
+        // Знімаємо клас 'active' з усіх табів і вмісту в даному наборі
+        tabLinks.forEach((link) => link.classList.remove("active"));
+        tabContents.forEach((content) => content.classList.remove("active"));
+
+        // Встановлюємо клас 'active' для вибраного табу і відповідного вмісту
+        tabLinks[index].classList.add("active");
+        tabContents[index].classList.add("active");
+    }
+
+    // Додаємо обробник події для кожного набору вкладок
+    tabSets.forEach((tabSet) => {
+        const tabLinks = tabSet.querySelectorAll(".tab-links li");
+
+        tabLinks.forEach((link, index) => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault(); // Забороняємо перехід по посиланню
+                setActiveTab(tabSet, index); // Встановлюємо активний таб для цього набору
+            });
+        });
+
+        // Встановлюємо активний таб за замовчуванням для кожного набору (наприклад, перший таб)
+        setActiveTab(tabSet, 0);
+    });
+});

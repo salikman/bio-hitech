@@ -1,0 +1,54 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .tab-links {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 991px) {
+      width: 100%;
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: max-content;
+      padding: 15px 24px;
+      background: transparent;
+      border: none;
+      outline: none;
+      transition: all .3s ease;
+      cursor: pointer;
+
+      &.active {
+        background: black;
+
+        span {
+          color: white;
+        }
+      }
+
+      span {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px; /* 135.714% */
+        text-transform: uppercase;
+        transition: all .3s ease;
+      }
+    }
+  }
+
+  .tab-content {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
