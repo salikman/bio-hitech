@@ -2175,6 +2175,195 @@ select {
   display: block;
 }
 
+.contents .state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.contents .state .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contents .state .step span {
+  color: #77B82A;
+}
+
+.contents .state .h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.contents .state .answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.contents .state .radio .variant label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.contents .state .radio .variant label input {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contents .state .radio .variant label input:checked ~ i:before {
+  background: #77B82A;
+}
+
+.contents .state .radio .variant label i {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #C5C5C5;
+  border-radius: 50%;
+}
+
+.contents .state .radio .variant label i:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contents .state .radio .variant label span {
+  color: #6b6b6b;
+}
+
+.contents .state .checkbox .variant label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.contents .state .checkbox .variant label input {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contents .state .checkbox .variant label input:checked ~ i:before {
+  background: #77B82A;
+}
+
+.contents .state .checkbox .variant label i {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #C5C5C5;
+}
+
+.contents .state .checkbox .variant label i:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  background: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contents .state .checkbox .variant label span {
+  color: #6b6b6b;
+}
+
+.contents .state .text .variant label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.contents .state .text .variant label input {
+  width: 100%;
+  font-size: 17px;
+  line-height: 1.176;
+  padding-bottom: 14px;
+  border: none;
+  border-bottom: 1px solid #C5C5C5;
+  outline: none;
+}
+
+.contents .state button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 18px;
+  background: #77B82A;
+  color: white;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contents .state button:active {
+  top: -1px;
+}
+
 @media (max-width: 991px) {
   .intro {
     height: auto;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231121111810">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231125132340">
     <title>Главная</title>
 </head>
 
@@ -68,7 +68,7 @@
         <div class="intro__wrapper">
             <h1>We build great houses. Simply.</h1>
             <p>We design and build houses. We fill your ideas. We respect your options. We work with top technologies.</p>
-            <a href="#">Actual projects</a>
+            <a href="#modal-quiz" data-fancybox>Actual projects</a>
         </div>
     </div>
 </div>
@@ -372,13 +372,224 @@
         </div>
     </div>
 </footer>
+    <div id="modal-quiz" style="display:none;max-width: 600px;">
+    <div class="contents started">
+        <form action="">
+            <div class="state screen1">
+                <div class="step"><span>1</span>/ 7</div>
+                <div class="h2">У вас уже есть участок земли под строительство?</div>
+                <div class="answers radio">
+                    <div class="variant">
+                        <label>
+                            <input name="s1" type="radio" value="Есть">
+                            <i></i>
+                            <span>Есть</span>
+                        </label>
+                    </div>
+                    <div class="variant">
+                        <label>
+                            <input name="s1" type="radio" value="Нет">
+                            <i></i>
+                            <span>Нет</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="btn">Дальше</button>
+            </div>
+            <div class="state screen2">
+                <div class="step"><span>2</span> / 7</div>
+                <div class="h2">Подведены ли коммуникации и сети?</div>
+                <div class="answers checkbox">
+                    <div class="variant">
+                        <label>
+                            <input type="checkbox" name="s2" value="Вода">
+                            <i></i>
+                            <span>Вода</span>
+                        </label>
+                    </div>
+                    <div class="variant">
+                        <label>
+                            <input type="checkbox" name="s2" value="Электрика">
+                            <i></i>
+                            <span>Электрика</span>
+                        </label>
+                    </div>
+                    <div class="variant">
+                        <label>
+                            <input type="checkbox" name="s2" value="Газ">
+                            <i></i>
+                            <span>Газ</span>
+                        </label>
+                    </div>
+                    <div class="variant">
+                        <label>
+                            <input type="checkbox" name="s2" value="Канализация">
+                            <i></i>
+                            <span>Канализация</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="btn">Дальше</button>
+            </div>
+            <div class="state screen3">
+                <div class="step"><span>3</span> / 7</div>
+                <div class="h2">Где находится участок?</div>
+                <div class="answers text">
+                    <div class="variant">
+                        <label>
+                            <input type="text" name="" id="" placeholder="Введите адрес">
+                        </label>
+                    </div>
+                </div>
+                <button class="btn">Дальше</button>
+            </div>
+            <div class="state screen4">
+                <div class="step"><span>4</span> / 7</div>
+                <div class="h2">Есть ли проект дома?</div>
+                <div class="answers radio">
+                    <div class="variant">
+                        <label>
+                            <input name="s4" type="radio" value="Есть">
+                            <i></i>
+                            <span>Есть</span>
+                        </label>
+                    </div>
+                    <div class="variant">
+                        <label>
+                            <input name="s4" type="radio" value="Нет">
+                            <i></i>
+                            <span>Нет</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="btn">Дальше</button>
+            </div>
+            <div class="state screen5">
+                <div class="step"><span>5</span> / 7</div>
+                <div class="h2">Есть ли разрешение на строительство?</div>
+                <div class="answers radio">
+                    <div class="variant">
+                        <label>
+                            <input name="s5" type="radio" value="Есть">
+                            <i></i>
+                            <span>Есть</span>
+                        </label>
+                    </div>
+                    <div class="variant">
+                        <label>
+                            <input name="s5" type="radio" value="Нет">
+                            <i></i>
+                            <span>Нет</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="btn">Дальше</button>
+            </div>
+            <div class="state screen6">
+                <div class="step"><span>6</span> / 7</div>
+                <div class="h2">Какую общую площадь дома планируете?</div>
+                <div class="answers radio">
+                    <div class="variant">
+                        <label>
+                            <input name="s6" type="radio" value="100-150м²">
+                            <i></i>
+                            <span>100-150м²</span>
+                        </label>
+                    </div>
+                    <div class="variant">
+                        <label>
+                            <input name="s6" type="radio" value="200-300м²">
+                            <i></i>
+                            <span>200-300м²</span>
+                        </label>
+                    </div>
+                    <div class="variant">
+                        <label>
+                            <input name="s6" type="radio" value="300-500м²">
+                            <i></i>
+                            <span>300-500м²</span>
+                        </label>
+                    </div>
+                    <div class="variant">
+                        <label>
+                            <input name="s6" type="radio" value="более 500м²">
+                            <i></i>
+                            <span>более 500м²</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="btn">Дальше</button>
+            </div>
+            <div class="state screen7">
+                <div class="step"><span>7</span> / 7</div>
+                <div class="h2">Вам удобнее получить предложение в мессенджер WhatsApp, Telegram?</div>
+                <div class="answers radio">
+                    <div class="variant">
+                        <label>
+                            <input name="s7" type="radio" value="WhatsApp">
+                            <i></i>
+                            <span>WhatsApp</span>
+                        </label>
+                    </div>
+                    <div class="variant">
+                        <label>
+                            <input name="s7" type="radio" value="Telegram">
+                            <i></i>
+                            <span>Telegram</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="answers text">
+                    <div class="variant">
+                        <label>
+                            <input type="tel" name="" placeholder="Телефон">
+                        </label>
+                    </div>
+                </div>
+                <div class="final" style="margin-left: auto">
+                    <button type="submit">Получить предложение</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231121111810" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css?_v=20231121111810" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js?_v=20231121111810" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231125132340" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css?_v=20231125132340" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js?_v=20231125132340" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20231121111810"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20231121111810"></script>
-    <script src="js/app.min.js?_v=20231121111810"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20231125132340"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20231125132340"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20231125132340" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20231125132340" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/app.min.js?_v=20231125132340"></script>
+    <script>
+        $(document).ready(function() {
+            var currentStep = 1;
+            var totalSteps = $('.state').length;
+
+            $('.state').hide();
+            $('.state:first').show();
+
+            $('.btn').click(function(event) {
+                event.preventDefault(); // Зупиняє перезавантаження сторінки
+
+                if (currentStep < totalSteps) {
+                    var currentSection = $('.state:nth-child(' + currentStep + ')');
+
+                    if (currentStep === 1 && currentSection.find('input[name="s1"]:checked').val() === 'Нет') {
+                        currentStep = 4;
+                    } else {
+                        currentStep++;
+                    }
+
+                    $('.state').hide();
+                    $('.state:nth-child(' + currentStep + ')').show();
+                } else {
+                    console.log("Тест завершено!");
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -18,6 +18,7 @@
     </main>
 
     @@include('html/base/footer.html', {})
+    @@include('html/elements/modal.html', {})
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,6 +26,36 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/app.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var currentStep = 1;
+            var totalSteps = $('.state').length;
+
+            $('.state').hide();
+            $('.state:first').show();
+
+            $('.btn').click(function(event) {
+                event.preventDefault(); // Зупиняє перезавантаження сторінки
+
+                if (currentStep < totalSteps) {
+                    var currentSection = $('.state:nth-child(' + currentStep + ')');
+
+                    if (currentStep === 1 && currentSection.find('input[name="s1"]:checked').val() === 'Нет') {
+                        currentStep = 4;
+                    } else {
+                        currentStep++;
+                    }
+
+                    $('.state').hide();
+                    $('.state:nth-child(' + currentStep + ')').show();
+                } else {
+                    console.log("Тест завершено!");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
